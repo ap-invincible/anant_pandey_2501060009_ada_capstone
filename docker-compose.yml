@@ -1,0 +1,10 @@
+services:
+  backend-db:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - mst_data:/app/data
+
+volumes:
+  mst_data:
